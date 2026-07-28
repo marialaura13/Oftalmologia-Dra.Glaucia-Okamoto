@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,500;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500;1,600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -398,31 +398,87 @@
         </div>
       </section>
 
-      <section class="instagram section">
-        <div class="container instagram-grid">
-          <div class="instagram-art reveal" aria-hidden="true">
-            <span>@glauciaokamoto</span>
-            <div class="eye-line"></div>
-          </div>
-          <div class="instagram-copy reveal">
+      <section
+        class="instagram section"
+        id="instagram"
+        aria-labelledby="instagram-title"
+      >
+        <div class="container">
+          <div class="instagram-heading reveal">
             <span class="instagram-icon"
               ><svg viewBox="0 0 24 24" aria-hidden="true">
                 <rect x="3" y="3" width="18" height="18" rx="5"></rect>
                 <circle cx="12" cy="12" r="4"></circle>
                 <circle cx="17.4" cy="6.7" r="1" class="fill"></circle></svg
             ></span>
-            <span class="eyebrow dark"><i></i> Informação também cuida</span>
-            <h2>Saúde ocular no seu dia a dia.</h2>
-            <p>
-              Acompanhe orientações, bastidores e conteúdos da Dra. Glaucia no
-              Instagram.
-            </p>
+            <div>
+              <span class="eyebrow dark"><i></i> Informação também cuida</span>
+              <h2 id="instagram-title">Saúde ocular no seu dia a dia.</h2>
+              <p>Conteúdos e bastidores da Dra. Glaucia no Instagram.</p>
+            </div>
             <a
-              class="button"
-              href="https://www.instagram.com/glauciaokamoto/"
+              class="instagram-profile"
+              href="https://www.instagram.com/glauciaokamoto/reels/"
               target="_blank"
               rel="noopener"
-              >Seguir @glauciaokamoto <span>↗</span></a
+              >@glauciaokamoto <span>↗</span></a
+            >
+          </div>
+
+          <div class="reels-component reveal" data-reels-carousel>
+            <button
+              class="reels-arrow reels-prev"
+              type="button"
+              aria-label="Ver Reels anteriores"
+            >
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="m15 18-6-6 6-6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div
+              class="reels-viewport"
+              tabindex="0"
+              aria-label="Conteúdos em destaque no Instagram"
+            >
+              <div class="reels-track"></div>
+            </div>
+            <button
+              class="reels-arrow reels-next"
+              type="button"
+              aria-label="Ver próximos Reels"
+            >
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="m9 18 6-6-6-6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div
+              class="reels-pagination"
+              role="group"
+              aria-label="Paginação dos conteúdos"
+            ></div>
+            <p class="sr-only reels-status" aria-live="polite"></p>
+          </div>
+
+          <div class="instagram-footer reveal">
+            <span>Veja mais conteúdos sobre visão e bem-estar.</span>
+            <a
+              class="button"
+              href="https://www.instagram.com/glauciaokamoto/reels/"
+              target="_blank"
+              rel="noopener"
+              >Conhecer o Instagram <span>↗</span></a
             >
           </div>
         </div>
