@@ -1363,10 +1363,6 @@ footer {
   font-size: 10px;
 }
 
-.mobile-cta {
-  display: none;
-}
-
 .phone-float {
   position: fixed;
   z-index: 75;
@@ -1896,46 +1892,12 @@ footer {
     flex-direction: column;
   }
 
-  .mobile-cta {
-    position: fixed;
-    z-index: 80;
-    right: 10px;
-    bottom: 10px;
-    left: 10px;
-    display: grid;
-    grid-template-columns: 0.75fr 1.25fr;
-    gap: 8px;
-    padding: 7px;
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    border-radius: 18px;
-    background: rgba(255, 253, 250, 0.94);
-    box-shadow: 0 16px 45px rgba(16, 44, 42, 0.2);
-    backdrop-filter: blur(14px);
-  }
-
   .phone-float {
     z-index: 85;
     right: 16px;
-    bottom: 92px;
+    bottom: 16px;
     width: 54px;
     height: 54px;
-  }
-
-  .mobile-cta a {
-    min-height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-    border-radius: 12px;
-    color: var(--forest);
-    font-size: 12px;
-    font-weight: 700;
-  }
-
-  .mobile-cta a:last-child {
-    background: var(--forest);
-    color: #fff;
   }
 }
 
